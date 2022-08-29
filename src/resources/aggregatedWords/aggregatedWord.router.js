@@ -8,7 +8,7 @@ const { BAD_REQUEST_ERROR } = require('../../errors/appErrors');
 const extractQueryParam = require('../../utils/getQueryNumberParameter');
 
 router.get('/', async (req, res) => {
-  const perPage = extractQueryParam(req.query.wordsPerPage, 10);
+  const perPage = extractQueryParam(req.query.wordsPerPage, 600);
   const page = extractQueryParam(req.query.page, 0);
   const group = extractQueryParam(req.query.group);
 
