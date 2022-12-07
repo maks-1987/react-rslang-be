@@ -51,7 +51,7 @@ logger.add(
   new winston.transports.Console({
     format: combine(colorize(), cli()),
     handleExceptions: true,
-    colorize: true
+    colorize: false
   })
 );
 // }
